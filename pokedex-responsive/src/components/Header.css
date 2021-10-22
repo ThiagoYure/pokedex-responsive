@@ -13,8 +13,8 @@ header {
     transition: all ease 0.5s;
 }
 .HeaderWithColor {
-    background: #75bd9e;
-    box-shadow: -10px 3px 20px #3f6353;
+    background: #488d57;
+    box-shadow: 0px 3px 20px #3f6353;
 }
 .Nav--logo {
     height: 45px;

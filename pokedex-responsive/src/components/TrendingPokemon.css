@@ -1,3 +1,144 @@
-.Banner{
-    margin-top: 100px;
+.Banner {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, #5a8572 5%, #ADD2C2);
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 185px;
+    padding-right: 50px;
+}
+
+.Banner--img {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.Banner--img img {
+    height: 100%;
+}
+
+.Banner--data {
+    background: #588286;
+    width: 500px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: all ease 0.25s;
+    box-shadow: 0px 3px 20px #3f6353;
+}
+.Banner--info {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Banner--name {
+    font-size: 40px;
+}
+
+.Banner--description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Banner--types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.Banner--types div{
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+.unknown{
+    background: #838383;
+}
+.shadow{
+    background: #2e2a2a;
+}
+.fairy{
+    background: #c9bc93;
+}
+.dark{
+    background: #2b2b55;
+}
+.dragon{
+    background: #a7315e;
+}
+.ice{
+    background: #4fc8cc;
+}
+.psychic{
+    background: #b47fd3;
+}
+.electric{
+    background: #b9a911;
+}
+.grass{
+    background: #308f3d;
+}
+.water{
+    background: #3346b3;
+}
+.fire{
+    background: #ca1c1c;
+}
+.steel{
+    background: #b0b6b1;
+}
+.ghost{
+    background: #764085;
+}
+.bug{
+    background: #b46f40;
+}
+.rock{
+    background: #803618;
+}
+.ground{
+    background: #471b09;
+}
+.fighting{
+    background: #db6e26;
+}
+.flying{
+    background: #a4c7d4;
+}
+.normal{
+    background: #e9a772;
+}
+.poison{
+    background: #b43cb4;
+}
+.Banner--buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttonVerMais{
+    padding: 7px 15px 7px 15px;
+    font-size: 22px;
+    background: #6274da;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 7px #3c4996;
+    opacity: 0.7;
+    transition: all ease 0.25s;
+    color: #ffffff;
+}
+
+.buttonVerMais:hover{
+    opacity: 1;
+}
+.buttonVerMais:active{
+    scale: 0.8;
+    opacity: 0.5;
 }
