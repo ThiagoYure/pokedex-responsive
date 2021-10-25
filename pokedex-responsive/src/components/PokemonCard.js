@@ -3,20 +3,40 @@ import poke_api from "./Poke-API";
 import './PokemonCard.css';
 import { Link } from 'react-router-dom';
 
-export default ({ pokemon }) => {
+export default ({ urlPokemon, pokeScale }) => {
     const [pokemonInfo, setPokemonInfo] = useState(null);
 
     useEffect(() => {
-        let res = poke_api.getPokemonByID(pokemon.url)
+        let res = poke_api.getPokemonByID(urlPokemon)
         res.then((value) => {
             setPokemonInfo(value);
         })
     }, []);
     return (
-        <Link to={"/"+pokemon.name}>
-            <div>
-                {pokemonInfo &&
-                    <div className="PokemonCard">
+        <div>
+            {pokemonInfo &&
+                <Link to={"/" + pokemonInfo.species.name}>
+                    <div className="PokemonCard" style={{
+                        borderWidth: 4,
+                        borderStyle: "solid",
+                        borderColor: "#e1fdff",
+                        padding: 10,
+                        display: "flex",
+                        marginLeft: 30,
+                        marginTop: 50,
+                        flexDirection: "column",
+                        borderRadius: 20,
+                        transitionProperty: "all",
+                        transitionDuration: 0.15,
+                        transitionTimingFunction: "ease",
+                        transitionDelay: 0,
+                        width: 250,
+                        height: 370,
+                        cursor: "pointer",
+                        alignItems: "center",
+                        color: "#d4d4d4",
+                        scale: ""+pokeScale
+                    }}>
                         <div className="Pokemon--img">
                             <div className="Pokemon--number">
                                 <strong>Nº {Math.floor(pokemonInfo.id / 100) !== 0 ? pokemonInfo.id :
@@ -38,8 +58,8 @@ export default ({ pokemon }) => {
                             })}
                         </div>
                     </div>
-                }
-            </div>
-        </Link>
+                </Link>
+            }
+        </div>
     );
 }

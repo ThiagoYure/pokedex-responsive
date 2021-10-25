@@ -17,6 +17,9 @@ const poke_api = {
     getPokemonSpecie: async (endpoint) => {
         return await fetchData(endpoint);
     },
+    getPokemonEvolutionChain: async (endpoint) => {
+        return await fetchData(endpoint);
+    }
 }
 
 export default poke_api;

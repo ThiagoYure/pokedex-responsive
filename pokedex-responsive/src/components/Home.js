@@ -19,7 +19,7 @@ export default () => {
             let list = await poke_api.getPokemons(`https://pokeapi.co/api/v2/pokemon/?limit=${offset}`);
             let results = await list.results;
             setPokemons(results);
-            let randomID = Math.floor(Math.random() * POKEMON_MAXIMUM_LENGTH);
+            let randomID = Math.floor(Math.random() * POKEMON_MAXIMUM_LENGTH -1);
             let chosenPokemon = await poke_api.getTrendingPokemon(randomID);
             setTrendingPokemon(chosenPokemon);
         }
@@ -98,7 +98,7 @@ export default () => {
                     }}>
                         {pokemons.map((pokemon, key) => {
                             return (
-                                <PokemonCard key={key} pokemon={pokemon} />
+                                <PokemonCard key={key} urlPokemon={pokemon.url} pokeScale={1}/>
                             );
                         })}
                     </div>

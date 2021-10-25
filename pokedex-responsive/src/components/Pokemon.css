@@ -1,0 +1,143 @@
+.PokemonBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 260px;
+    margin-right: 260px;
+    width: 800px;
+}
+
+.PokemonBanner--title {
+    background: #4b5266;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.PokemonBanner--number {
+    color: #cad806;
+    margin-right: 10px;
+}
+
+.PokemonBanner--main {
+    display: flex;
+    flex-direction: row;
+}
+
+.PokemonBanner--img {
+    height: 400px;
+    margin-right: 20px;
+    background: #d8d8d82a;
+    border-radius: 10px;
+}
+
+.PokemonBanner--img img {
+    height: 100%;
+}
+
+.PokemonBanner--stats {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.PokemonBanner--stats div {
+    margin-right: 20px;
+}
+
+.PokemonBanner--secondary {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background: #4b5266;
+}
+
+.PokemonBanner--types {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.PokemonBanner--types div {
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 5px;
+}
+
+.PokemonBanner--abilities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.PokemonBanner--abilities div {
+    color: #252525;
+    background: #f4f5ff;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.PokemonBanner--evolutions {
+    background: #4b5266;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Evolutions--secondary, .Evolutions--ultimate{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/*.Evolutions--secondary {
+    margin-right: 0;
+}
+
+.Evolutions--ultimate {
+    margin-right: 3px;
+}*/
+.EvolutionDirection {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.sequence{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
